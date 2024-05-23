@@ -1,5 +1,5 @@
 This is my pc protection site download. please give me feedback with the contact page.
-
+Download the whole file as a .zip and extract it.
 
 
 
