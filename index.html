@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobvr's PC Security Hub</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: #FFFFFF;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    h1, h2, h3 {
+      color: #00FF00;
+      text-align: center;
+    }
+    p {
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    /* Header Styles */
+    header {
+      background-color: #000000;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    /* Navigation Styles */
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #00FF00;
+      margin: 0 10px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #33cc33;
+    }
+    /* Main Content Styles */
+    .main-content {
+      background-color: #1E1E1E;
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+    .main-content h2 {
+      margin-top: 0;
+    }
+    .main-content ul {
+      margin-left: 20px;
+    }
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #000000;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer p {
+      margin: 0;
+    }
+    /* Additional Enhancements */
+    .faq {
+      margin-top: 40px;
+    }
+    .faq h3 {
+      cursor: pointer;
+      background-color: #333;
+      padding: 10px;
+      margin: 0;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .faq p {
+      display: none;
+      padding: 10px;
+      margin: 0;
+      background-color: #444;
+      border-radius: 0 0 5px 5px;
+    }
+    .faq h3:hover {
+      background-color: #444;
+    }
+    .blog-section {
+      margin-top: 40px;
+      background-color: #1E1E1E;
+      border-radius: 10px;
+      padding: 30px;
+    }
+    .motd {
+      background-color: #1E1E1E;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lobvr's PC Security Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>Welcome to Lobvr's PC Security Hub</h2>
+      <p>Your one-stop destination for all things PC security, inspired by the Matrix.</p>
+      <div class="security-info">
+        <h3>Stay Safe in the Digital World</h3>
+        <p>Protect your computer from cyber threats with our cutting-edge security solutions.</p>
+        <p>Explore our range of products and services:</p>
+        <ul>
+          <li>Antivirus Software</li>
+          <li>Firewall Protection</li>
+          <li>Malware Removal Tools</li>
+          <li>Secure VPN Services</li>
+        </ul>
+        <p>Empower yourself with knowledge through our informative articles and guides.</p>
+      </div>
+
+      <!-- Message of the Day -->
+      <div class="motd">
+        <h2>Message of the Day</h2>
+        <p id="motd-text">Loading...</p>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div>
+        <h3>What is the best antivirus software?</h3>
+        <p>The best antivirus software depends on your specific needs, but some top-rated options include Norton, Bitdefender, and McAfee.</p>
+      </div>
+      <div>
+        <h3>How can I secure my home network?</h3>
+        <p>Secure your home network by using a strong password, enabling encryption, and keeping your router firmware updated.</p>
+      </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="blog-section">
+      <h2>Latest Blog Posts</h2>
+      <p>Stay updated with the latest trends and tips in PC security.</p>
+      <ul>
+        <li><a href="#" style="color: #00FF00;">How to Choose the Right Antivirus Software</a></li>
+        <li><a href="#" style="color: #00FF00;">Top 10 Cybersecurity Tips for 2024</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Lobvr's PC Security Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript for interactive FAQ
+    document.querySelectorAll('.faq h3').forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.nextElementSibling.style.display = faq.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Message of the Day
+    const motdArray = [
+      "Keep your software up to date to protect against the latest threats.",
+      "Use strong, unique passwords for each of your accounts.",
+      "Regularly back up your important data to prevent data loss.",
+      "Enable two-factor authentication wherever possible.",
+      "Be cautious of phishing emails and suspicious links.",
+      "Install a reputable antivirus program and keep it updated.",
+      "Use a VPN to protect your online privacy and security.",
+      "Regularly scan your system for malware and other threats.",
+      "Ensure your home Wi-Fi network is secured with a strong password.",
+      "Educate yourself on the latest cybersecurity best practices."
+    ];
+
+    function getMotd() {
+      const today = new Date();
+      const index = today.getDate() % motdArray.length;
+      return motdArray[index];
+    }
+
+    document.getElementById('motd-text').innerText = getMotd();
+  </script>
+</body>
+</html>
